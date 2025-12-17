@@ -1,0 +1,14 @@
+{
+	"name": "www",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "vite --port $(turbo get-mfe-port)",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "catalog:"
+	}
+}

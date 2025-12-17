@@ -1,0 +1,48 @@
+{
+	"$schema": "https://turborepo.com/microfrontends/schema.json",
+	"applications": {
+		"www": {
+			"development": {
+				"local": {
+					"port": 3000
+				}
+			}
+		},
+		"astro": {
+			"development": {
+				"local": {
+					"port": 3001
+				}
+			},
+			"routing": [
+				{
+					"paths": ["/astro", "/astro/:path*"]
+				}
+			]
+		},
+		"next": {
+			"development": {
+				"local": {
+					"port": 3002
+				}
+			},
+			"routing": [
+				{
+					"paths": ["/next", "/next/:path*"]
+				}
+			]
+		},
+		"react": {
+			"development": {
+				"local": {
+					"port": 3003
+				}
+			},
+			"routing": [
+				{
+					"paths": ["/react", "/react/:path*"]
+				}
+			]
+		}
+	}
+}
